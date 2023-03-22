@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@800 & display=swap');
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+img{
+  width: 6%;
+}
+
+.row-connection{
+  display:flex;
+  margin-left: -300px;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.card-login {
+  width: 350px;
+  display: block;
+}
+
+.card-login button[type=submit]{
+  width: 100%;
+}
+
+.card .card-content{
+  margin-top: 50px;
+}
+
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open sans', sans-serif;
+
+}
+
+body{
+  background: #A2A3BB;
+}
+
+a{
+  color: #d6d5d5 ;
+}
+
+.wrapper .sidebar{
+  background: #1C3144;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100px;
+  padding: 20px 0 100%;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile{
+  margin-bottom: 35px;
+}
+
+.wrapper .sidebar .profile img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3,hr {
+  color: #d6d5d5;
+  margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+  color: #d6d5d5;
+  font-size: 14px;
+}
+
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #1C3144;
+  color: #d6d5d5;
+  font-size: 16px;
+  position: relative;
+  font-family: 'open sans', sans-serif;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: #d6d5d5;
+  width: 30px;
+  display: inline-block;
+}
+
+/* link hover */
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  color: #000000;
+  background: #A2A3BB;
+  border-right: 2px solid #d6d5d5;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+  color:#000000;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before{
+  display: block;
+}
+
+.wrapper .section{
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+  background-color: #1C3144;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+  font-size: 28px;
+  color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+  color: #a3ecff;
+}
+
+body.active .wrapper .sidebar{
+  left: -225px;
+}
+
+body.active .wrapper .section{
+  margin-left: 0;
+  width: auto;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  height: calc(100% - 107px);
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.card{
+  width: 550px;
+  margin: 0px auto;
+  background-color: #EAF8BF;
+  box-shadow: 0px 5px 20px #999;
+}
+
+.card_consul{
+  width: 1100px;
+  margin: 0px auto;
+  background-color: #EAF8BF;
+  box-shadow: 0px 5px 20px #999;
+  color: #333;
+  text-decoration: nome;
+}
+
+.card a {
+  color: #333;
+  text-decoration: nome;
+}
+
+.card-body{
+  text-align: center;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.card-date{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-title, .card-excerpt{
+  font-family: 'Playfair Display', serif;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-excerpt{
+  color: #777;
+}
+
+.card-expect-formu{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+.navbar{
+  background-color: #e0e0e0;
+}
+
+.cardindex{
+  margin-top: 15%;
+}
+
+footer{
+  position: fixed;
+  background-color: #1C3144;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.pied{
+	display: flex;
+	width: 100%;
+  justify-content: space-between;
+}
+
+.centre{
+	width:33%;
+	text-align: center;
+}
+
+.droite{
+	width: 33%;
+	text-align: right;
+  margin-right: 2%;
+}
+
+.gauche{
+	width: 33%;
+	text-align: left;
+  margin-left: 1%;
+
+}
+
+.NameService{
+  margin-left: 42%;
+  color: #e0e0e0;
+}
+
+.utilisateur{
+  margin-left: 50%;
+  color:#A2A3BB;
+}
+
+/* Dropdown Button */
+.dropbtn, .dropbtnconsul {
+  color:#A2A3BB;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.dropbtn{
+  margin-left: 50px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown, .dropbtnconsul {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #A2A3BB;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* espacement */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+
+thead th:nth-child(5) {
+  width: 20%;
+}
+
+thead th:nth-child(6) {
+  width: 10%;
+}
+
+thead th:nth-child(7) {
+  width: 10%;
+}
+
+th, td {
+  padding: 20px 20px;
+}
+
+th{
+  letter-spacing: 2px;
+}
+
+td{
+  letter-spacing: 1px;
+  color: #A2A3BB;
+}
+
+tbody td{
+  text-align: center;
+  border: 3px solid black;
+}
+
+thead {
+  background-color: #d6d5d5;
+  color:#A2A3BB;
+}
+
+thead th {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d6d5d5;
+}
+
+label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: .4rem;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #A2A3BB;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #d6d5d5;}
+
+/*Pour la page consultation*/
+
+/*Change color of dropdown links on hover*/
+.dropdownconsul-content a:hover {background-color: #A2A3BB;}
+
+/*Show the dropdown menu on hover*/
+.dropdownconsul:hover .dropdown-content {display: block;}
+
+/*Change the background color of the dropdown button when the dropdown content is shown*/
+.dropdownconsul:hover .dropbtn {background-color: #d6d5d5;}
